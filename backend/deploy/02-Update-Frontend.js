@@ -30,21 +30,6 @@ async function updateAbi() {
     }
 }
 
-async function getContractAddresses(folder = './contracts') {
-    let fileNames = fs.readdirSync('./contracts');
-    let addresses = [];
-    for (let fileName of fileNames) {
-        fileName = path.parse(fileName).name;
-        try {
-            let contractToBeWritten = await ethers.getContract(fileName)
-            addresses.push(contractToBeWritten.address)
-
-        } catch (error) { }
-
-    }
-    return addresses
-
-}
 
 async function updateContractAddresses() {
 
@@ -53,21 +38,29 @@ async function updateContractAddresses() {
         contractAddresses = JSON.parse(fs.readFileSync(frontEndContractsFile, "utf8"))
     } catch (error) { }
 
-    let contracts = await getContractAddresses();
-    for (const contract of contracts) {
+    let fileNames = fs.readdirSync('./contracts');
+    let objectItem = {};
+    for (let fileName of fileNames) {
+        fileName = path.parse(fileName).name;
 
-        if (network.config.chainId.toString() in contractAddresses) {
-            if (!contractAddresses[network.config.chainId.toString()].includes(contract)) {
-                contractAddresses[network.config.chainId.toString()].push(contract)
+        try {
+            let contractToBeWritten = await ethers.getContract(fileName);
+            fileName = fileName.toLowerCase();
+            objectItem[fileName] = [contractToBeWritten.address];
+            if (network.config.chainId.toString() in contractAddresses) {
+                delete contractAddresses[network.config.chainId.toString()];
             }
-        } else {
+            contractAddresses[network.config.chainId.toString()] = objectItem;
 
-            contractAddresses[network.config.chainId.toString()] = [contract]
-        }
+        } catch (error) { }
 
     }
+
     fs.writeFileSync(frontEndContractsFile, JSON.stringify(contractAddresses))
 
 
 }
+
+
+
 module.exports.tags = ["all", "frontend"]
