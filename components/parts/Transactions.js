@@ -1,23 +1,72 @@
+import { contractAddresses, sale, solderse } from '../../constants'
 import { ConnectButton } from '@web3uikit/web3'
-import { useMoralis } from "react-moralis";
+import { useMoralis, useWeb3Contract } from "react-moralis";
 import { useForm } from "react-hook-form";
 import { ToastContainer, toast } from 'react-toastify';
 import truncateEthAddress from 'truncate-eth-address';
 import { env } from '../../next.config';
-
 import 'react-toastify/dist/ReactToastify.css';
+import { useState, useEffect } from 'react';
+// import Moralis from 'moralis-v1/types';
+
+
 const endpoint = '/api/transactionform';
+
 
 
 export default function Transactions() {
 
     const { register, handleSubmit, setError, formState: { isSubmitting, errors } } = useForm();
-    const { isWeb3Enabled, account, chainId: chainIdHex } = useMoralis();
+    const { isWeb3Enabled, account, chainId: chainIdHex, Moralis } = useMoralis();
     const chainId = Number(chainIdHex);
 
-    const onSubmit = async (data) => {
-        console.log(chainId);
+
+    const saleAddress = chainId in contractAddresses ? contractAddresses[chainId]['sale'].toString() : null
+
+    const [amountToBuy, setAmountToBuy] = useState("0");
+    const [buttonClicked, setButtonClicked] = useState("0");
+
+    const {
+        runContractFunction: buyTokens,
+        data: enterTxResponse,
+        isLoading,
+        isFetching,
+        error
+    } = useWeb3Contract({
+        abi: sale,
+        contractAddress: saleAddress,
+        functionName: "buyTokens",
+        msgValue: amountToBuy,
+        params: {},
     }
+    )
+
+
+    const onSubmit = async (data) => {
+
+        if (isWeb3Enabled) {
+            setAmountToBuy(Moralis.Units.ETH(data.amount.toString()));
+            setButtonClicked(1);
+        }
+    }
+
+
+    useEffect(() => {
+
+        if (buttonClicked === 1) {
+            const fetchData = async () => {
+                return (await buyTokens());
+            }
+            const enterTxResponse = fetchData();
+            console.log(enterTxResponse);
+
+            setButtonClicked(0);
+
+        }
+
+    }, [buttonClicked]);
+
+
 
 
     return (
@@ -26,6 +75,20 @@ export default function Transactions() {
                 <h3 className="text-xl font-semibold sm:text-center sm:text-2xl">
                     Private Sale
                 </h3>
+                <ToastContainer
+                    position="top-right"
+                    autoClose={5000}
+                    hideProgressBar={false}
+                    newestOnTop={false}
+                    closeOnClick
+                    rtl={false}
+                    pauseOnFocusLoss
+                    draggable
+                    pauseOnHover
+                    theme="light"
+                />
+                {/* Same as */}
+                <ToastContainer />
                 <a className="block mb-4 text-center text-xl font-bold text-deep-purple-accent-700 hover:text-deep-purple-500">
                     1 BNB = {env.RATE.toLocaleString()} SOLD
                 </a>
@@ -71,10 +134,10 @@ export default function Transactions() {
                                     value: (env.MIN_VALUE),
                                     message: env.BASE_COIN + ' amount should not be less than ' + env.MIN_VALUE
                                 },
-                                max: {
-                                    value: env.MAX_VALUE,
-                                    message: env.BASE_COIN + ' amount should not be greater than ' + env.MAX_VALUE
-                                },
+                                // max: {
+                                //     value: env.MAX_VALUE,
+                                //     message: env.BASE_COIN + ' amount should not be greater than ' + env.MAX_VALUE
+                                // },
                                 valueAsNumber: true
 
                             })}

@@ -124,7 +124,6 @@ contract Sale is ReentrancyGuard, Context, Ownable {
         _contributions[_msgSender()] = _contributions[_msgSender()].add(
             weiAmount
         );
-        console.log(_msgSender());
         emit TokensPurchased(_msgSender(), msg.sender, weiAmount, tokens);
         claimTokens();
         _forwardFunds();

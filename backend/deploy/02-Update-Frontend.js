@@ -7,23 +7,23 @@ module.exports = async () => {
     if (process.env.UPDATE_FRONT_END) {
         console.log("Writing to front end...")
         await updateContractAddresses()
-        // await getContractAddresses();
         await updateAbi()
         console.log("Front end written!")
     }
 }
 
+/**
+ * This will update the abi with the name of contracts
+ */
 async function updateAbi() {
 
     let fileNames = fs.readdirSync('./contracts');
     for (let fileName of fileNames) {
         const path = require('path');
         fileName = path.parse(fileName).name;
-
         try {
-
             let contractToBeWritten = await ethers.getContract(fileName)
-            fs.writeFileSync(frontEndAbiFile + fileName, contractToBeWritten.interface.format(ethers.utils.FormatTypes.json))
+            fs.writeFileSync(frontEndAbiFile + fileName + '.json', contractToBeWritten.interface.format(ethers.utils.FormatTypes.json))
 
         } catch (error) { }
 
@@ -31,8 +31,10 @@ async function updateAbi() {
 }
 
 
+/**
+ * This will pass the deployed contract addresses 
+ */
 async function updateContractAddresses() {
-
     let contractAddresses = {};
     try {
         contractAddresses = JSON.parse(fs.readFileSync(frontEndContractsFile, "utf8"))

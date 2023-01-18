@@ -13,7 +13,7 @@ module.exports = async ({ getNamedAccounts, deployments }) => {
     await deploy('Sale', {
         from: deployer,
         log: true,
-        args: [5000, wallet, solderse.address, decimals]
+        args: [ethers.utils.parseUnits("5000".toString(), "ether"), wallet, solderse.address, decimals]
     });
 
 
@@ -24,10 +24,10 @@ module.exports = async ({ getNamedAccounts, deployments }) => {
 
 
 
-    const sale = await ethers.getContract("Sale")
+    const sale = await ethers.getContract("Sale");
 
     //Transfering the presale amount to sale token
-    await solderse.transfer(sale.address, ethers.utils.parseUnits("10000"));
+    await solderse.transfer(sale.address, ethers.utils.parseUnits("1000000", "ether"));
 
     //Starting the ICO
     const txResponse = await sale.startICO(
@@ -38,7 +38,7 @@ module.exports = async ({ getNamedAccounts, deployments }) => {
         ethers.utils.parseUnits(process.env.HARDCAP, decimals),
     );
     const txReceipt = await txResponse.wait();
-
+    console.log((await sale._rate()).toString());
 
 };
 module.exports.tags = ["all", "sale"]
