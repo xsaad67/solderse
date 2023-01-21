@@ -2,15 +2,10 @@ import { contractAddresses, sale, solderse } from '../../constants'
 import { ConnectButton } from '@web3uikit/web3'
 import { useMoralis, useWeb3Contract } from "react-moralis";
 import { useForm } from "react-hook-form";
-import { ToastContainer, toast } from 'react-toastify';
 import truncateEthAddress from 'truncate-eth-address';
 import { env } from '../../next.config';
-import 'react-toastify/dist/ReactToastify.css';
 import { useState, useEffect } from 'react';
-// import Moralis from 'moralis-v1/types';
-
-
-const endpoint = '/api/transactionform';
+import { toast } from 'react-toastify';
 
 
 
@@ -59,7 +54,7 @@ export default function Transactions() {
             }
             const enterTxResponse = fetchData();
             console.log(enterTxResponse);
-
+            toast(<div>Transaction posted<br />TXN: 2x</div>);
             setButtonClicked(0);
 
         }
@@ -75,20 +70,8 @@ export default function Transactions() {
                 <h3 className="text-xl font-semibold sm:text-center sm:text-2xl">
                     Private Sale
                 </h3>
-                <ToastContainer
-                    position="top-right"
-                    autoClose={5000}
-                    hideProgressBar={false}
-                    newestOnTop={false}
-                    closeOnClick
-                    rtl={false}
-                    pauseOnFocusLoss
-                    draggable
-                    pauseOnHover
-                    theme="light"
-                />
-                {/* Same as */}
-                <ToastContainer />
+
+
                 <a className="block mb-4 text-center text-xl font-bold text-deep-purple-accent-700 hover:text-deep-purple-500">
                     1 BNB = {env.RATE.toLocaleString()} SOLD
                 </a>
@@ -171,7 +154,6 @@ export default function Transactions() {
                         }
                     </div>
                     <div className="mt-4 mb-2 sm:mb-4">
-                        <ToastContainer position="top-right" />
 
                         {isWeb3Enabled ?
                             <button

@@ -7,7 +7,8 @@ import Tokenomics from '../components/Tokenomics'
 import Features from '../components/Features'
 import Roadmap from '../components/Roadmap'
 import Teams from '../components/Teams'
-
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 
@@ -23,6 +24,23 @@ export default function Home() {
       <Navbar></Navbar>
 
       <main className='relative'>
+        <ToastContainer
+          position="top-right"
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="light"
+        />
+
+        {/* Same as */}
+        <ToastContainer />
+
+
         <Header></Header>
         <About></About>
         <Tokenomics></Tokenomics>

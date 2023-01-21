@@ -1,11 +1,12 @@
 const { deployments, network } = require("hardhat");
-require('dotenv').config();
+require('dotenv').config({ path: __dirname + '/../../.env' });
 
 
 module.exports = async ({ getNamedAccounts, deployments }) => {
 
     const solderse = await ethers.getContract("Solderse")
     const decimals = await solderse.decimals();
+
 
 
     const { deploy } = deployments;
@@ -25,11 +26,11 @@ module.exports = async ({ getNamedAccounts, deployments }) => {
 
 
     const sale = await ethers.getContract("Sale");
-
+    console.log(solderse.address);
     //Transfering the presale amount to sale token
     await solderse.transfer(sale.address, ethers.utils.parseUnits("1000000", "ether"));
 
-    //Starting the ICO
+    // Starting the ICO
     const txResponse = await sale.startICO(
         endingIco,
         ethers.utils.parseUnits(process.env.MIN, decimals),
