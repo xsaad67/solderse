@@ -1,4 +1,4 @@
-import Transactions from "./parts/Transactions";
+//import Transactions from "./parts/Transactions";
 
 export default function Header() {
 
@@ -43,7 +43,7 @@ export default function Header() {
                                 </svg>
                             </a>
                         </div>
-                        <Transactions></Transactions>
+                        {/* <Transactions></Transactions> */}
                     </div>
                 </div>
 
