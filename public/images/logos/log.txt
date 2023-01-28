@@ -1,0 +1,131 @@
+2023-01-28T08:08:56.750Z [INFO]: # Cloning repository: git@github.com:xsaad67/solderse.git
+2023-01-28T08:08:58.123Z [INFO]: 
+2023-01-28T08:08:58.125Z [INFO]: Cloning into 'solderse'...
+2023-01-28T08:08:58.126Z [INFO]: # Checking for Git submodules at: /codebuild/output/src861227254/src/solderse/.gitmodules
+2023-01-28T08:08:58.135Z [INFO]: # Retrieving environment cache...
+2023-01-28T08:08:58.175Z [WARNING]: ! Unable to write cache: {"code":"ERR_BAD_REQUEST","message":"Request failed with status code 404"})}
+2023-01-28T08:08:58.175Z [INFO]: ---- Setting Up SSM Secrets ----
+2023-01-28T08:08:58.175Z [INFO]: SSM params {"Path":"/amplify/d31dibds6e0it3/main/","WithDecryption":true}
+2023-01-28T08:08:58.206Z [WARNING]: !Failed to set up process.env.secrets
+2023-01-28T08:08:58.208Z [INFO]: # Defaulting to Node version 16
+2023-01-28T08:09:08.033Z [INFO]: # Node version 16 is available for installation
+2023-01-28T08:09:08.192Z [INFO]: # Installing Node version 16
+2023-01-28T08:09:15.096Z [INFO]: # Now using Node version 16
+2023-01-28T08:09:15.202Z [INFO]: No live updates for this build run
+2023-01-28T08:09:15.205Z [INFO]: Setting NEXT_PRIVATE_STANDALONE=true to produce .next/standalone directory
+2023-01-28T08:09:15.206Z [INFO]: # Retrieving cache...
+2023-01-28T08:09:15.251Z [INFO]: # Retrieved cache
+2023-01-28T08:09:56.068Z [INFO]: ## Starting Backend Build
+                                 ## Checking for associated backend environment...
+                                 ## No backend environment association found, continuing...
+2023-01-28T08:09:56.070Z [INFO]: ## Completed Backend Build
+2023-01-28T08:09:56.072Z [INFO]: ## Starting Frontend Build
+2023-01-28T08:09:56.072Z [INFO]: # Starting phase: preBuild
+                                 # Executing command: npm ci
+2023-01-28T08:09:57.309Z [WARNING]: npm WARN
+2023-01-28T08:09:57.310Z [WARNING]: ERESOLVE overriding peer dependency
+2023-01-28T08:09:57.310Z [WARNING]: npm
+2023-01-28T08:09:57.310Z [WARNING]: WARN While resolving: use-immer@0.6.0
+                                    npm WARN Found: react@18.2.0
+                                    npm WARN
+2023-01-28T08:09:57.310Z [WARNING]: node_modules/react
+                                    npm WARN   react@"18.2.0" from the root project
+                                    npm WARN   16 more (@web3uikit/core, @web3uikit/icons, @web3uikit/styles, ...)
+                                    npm WARN
+                                    npm
+2023-01-28T08:09:57.311Z [WARNING]: WARN Could not resolve dependency:
+                                    npm WARN peer react@"^16.8.0 || ^17.0.1" from use-immer@0.6.0
+                                    npm WARN node_modules/react-moralis/node_modules/use-immer
+                                    npm WARN   use-immer@"^0.6.0" from react-moralis@1.4.2
+                                    npm WARN   node_modules/react-moralis
+                                    npm WARN
+                                    npm WARN Conflicting peer dependency: react@17.0.2
+                                    npm WARN node_modules/react
+                                    npm WARN   peer react@"^16.8.0 || ^17.0.1" from use-immer@0.6.0
+                                    npm WARN   node_modules/react-moralis/node_modules/use-immer
+                                    npm WARN
+2023-01-28T08:09:57.311Z [WARNING]: use-immer@"^0.6.0" from react-moralis@1.4.2
+                                    npm WARN     node_modules/react-moralis
+2023-01-28T08:10:11.589Z [WARNING]: npm
+2023-01-28T08:10:11.591Z [WARNING]: WARN deprecated har-validator@5.1.5: this library is no longer supported
+2023-01-28T08:10:11.831Z [WARNING]: npm WARN deprecated safe-event-emitter@1.0.1: Renamed to @metamask/safe-event-emitter
+2023-01-28T08:10:12.006Z [WARNING]: npm WARN
+2023-01-28T08:10:12.006Z [WARNING]: deprecated @walletconnect/mobile-registry@1.4.0: Deprecated in favor of dynamic registry available from: https://github.com/walletconnect/walletconnect-registry
+2023-01-28T08:10:12.150Z [WARNING]: npm WARN deprecated
+2023-01-28T08:10:12.151Z [WARNING]: eth-sig-util@1.4.2: Deprecated in favor of '@metamask/eth-sig-util'
+2023-01-28T08:10:12.585Z [WARNING]: npm WARN
+2023-01-28T08:10:12.585Z [WARNING]: deprecated uuid@3.4.0: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+2023-01-28T08:10:13.091Z [WARNING]: npm WARN
+2023-01-28T08:10:13.091Z [WARNING]: deprecated request@2.88.2: request has been deprecated, see https://github.com/request/request/issues/3142
+2023-01-28T08:10:13.532Z [WARNING]: npm WARN
+2023-01-28T08:10:13.533Z [WARNING]: deprecated ethereumjs-tx@1.3.7: New package name format for new versions: @ethereumjs/tx. Please update.
+2023-01-28T08:10:13.751Z [WARNING]: npm WARN deprecated
+2023-01-28T08:10:13.751Z [WARNING]: ethereumjs-block@2.2.2: New package name format for new versions: @ethereumjs/block. Please update.
+2023-01-28T08:10:14.019Z [WARNING]: npm WARN deprecated ethereumjs-tx@2.1.2: New package name format for new versions: @ethereumjs/tx. Please update.
+2023-01-28T08:10:14.121Z [WARNING]: npm WARN deprecated
+2023-01-28T08:10:14.121Z [WARNING]: querystring@0.2.0: The querystring API is considered Legacy. new code should use the URLSearchParams API instead.
+2023-01-28T08:10:14.475Z [WARNING]: npm WARN
+2023-01-28T08:10:14.475Z [WARNING]: deprecated ethereumjs-block@1.7.1: New package name format for new versions: @ethereumjs/block. Please update.
+2023-01-28T08:10:14.631Z [WARNING]: npm WARN
+2023-01-28T08:10:14.632Z [WARNING]: deprecated ethereumjs-vm@2.6.0: New package name format for new versions: @ethereumjs/vm. Please update.
+2023-01-28T08:10:14.955Z [WARNING]: npm WARN
+2023-01-28T08:10:14.957Z [WARNING]: deprecated ethereumjs-common@1.5.2: New package name format for new versions: @ethereumjs/common. Please update.
+2023-01-28T08:10:16.808Z [WARNING]: npm WARN deprecated @web3auth/web3auth@1.2.4: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
+2023-01-28T08:10:30.328Z [INFO]: added 911 packages, and audited 912 packages in 34s
+2023-01-28T08:10:30.329Z [INFO]: 171 packages are looking for funding
+                                 run `npm fund` for details
+                                 found 0 vulnerabilities
+2023-01-28T08:10:30.346Z [INFO]: # Completed phase: preBuild
+                                 # Starting phase: build
+                                 # Executing command: npm run build
+2023-01-28T08:10:30.601Z [INFO]: > solderse@0.1.0 build
+                                 > next build
+2023-01-28T08:10:30.965Z [WARNING]: warn  - Invalid next.config.js options detected:
+2023-01-28T08:10:30.966Z [WARNING]: - The root value has an unexpected property, nextConfig, which is not in the list of allowed properties (amp, analyticsId, assetPrefix, basePath, cleanDistDir, compiler, compress, crossOrigin, devIndicators, distDir, env, eslint, excludeDefaultMomentLocales, experimental, exportPathMap, future, generateBuildId, generateEtags, headers, httpAgentOptions, i18n, images, onDemandEntries, optimizeFonts, output, outputFileTracing, pageExtensions, poweredByHeader, productionBrowserSourceMaps, publicRuntimeConfig, reactStrictMode, redirects, rewrites, sassOptions, serverRuntimeConfig, staticPageGenerationTimeout, swcMinify, trailingSlash, typescript, useFileSystemPublicRoutes, webpack).
+2023-01-28T08:10:30.968Z [WARNING]: See more info here: https://nextjs.org/docs/messages/invalid-next-config
+2023-01-28T08:10:30.969Z [INFO]: warn  - No build cache found. Please configure build caching for faster rebuilds. Read more: https://nextjs.org/docs/messages/no-cache
+2023-01-28T08:10:30.990Z [INFO]: Attention: Next.js now collects completely anonymous telemetry regarding usage.
+2023-01-28T08:10:30.991Z [INFO]: This information is used to shape Next.js' roadmap and prioritize features.
+                                 You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+                                 https://nextjs.org/telemetry
+2023-01-28T08:10:31.092Z [INFO]: info  - Linting and checking validity of types...
+2023-01-28T08:10:32.749Z [INFO]: ./components/Highlights.jsx
+                                 20:25  Warning: Do not use `<img>` element. Use `<Image />` from `next/image` instead. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+                                 25:25  Warning: Do not use `<img>` element. Use `<Image />` from `next/image` instead. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+                                 29:25  Warning: Do not use `<img>` element. Use `<Image />` from `next/image` instead. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+                                 33:25  Warning: Do not use `<img>` element. Use `<Image />` from `next/image` instead. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+                                 37:25  Warning: Do not use `<img>` element. Use `<Image />` from `next/image` instead. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+                                 41:25  Warning: Do not use `<img>` element. Use `<Image />` from `next/image` instead. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+                                 45:25  Warning: Do not use `<img>` element. Use `<Image />` from `next/image` instead. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+                                 49:25  Warning: Do not use `<img>` element. Use `<Image />` from `next/image` instead. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+                                 ./components/Teams.jsx
+                                 20:21  Warning: Do not use `<img>` element. Use `<Image />` from `next/image` instead. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+                                 31:21  Warning: Do not use `<img>` element. Use `<Image />` from `next/image` instead. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+                                 42:21  Warning: Do not use `<img>` element. Use `<Image />` from `next/image` instead. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+                                 54:21  Warning: Do not use `<img>` element. Use `<Image />` from `next/image` instead. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+                                 65:21  Warning: Do not use `<img>` element. Use `<Image />` from `next/image` instead. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+                                 76:21  Warning: Do not use `<img>` element. Use `<Image />` from `next/image` instead. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+                                 ./components/parts/Transactions.js
+                                 59:8  Warning: React Hook useEffect has a missing dependency: 'buyTokens'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+                                 info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/basic-features/eslint#disabling-rules
+2023-01-28T08:10:32.752Z [INFO]: info  - Creating an optimized production build...
+2023-01-28T08:10:41.226Z [WARNING]: Failed to compile.
+2023-01-28T08:10:41.227Z [WARNING]: ./constants/index.js
+                                    Module not found: Can't resolve './sale.json' in '/codebuild/output/src861227254/src/solderse/constants'
+                                    Import trace for requested module:
+                                    ./components/parts/Transactions.js
+                                    ./components/Header.jsx
+                                    ./pages/index.js
+                                    ./constants/index.js
+                                    Module not found: Can't resolve './solderse.json' in '/codebuild/output/src861227254/src/solderse/constants'
+                                    Import trace for requested module:
+                                    ./components/parts/Transactions.js
+                                    ./components/Header.jsx
+                                    ./pages/index.js
+                                    > Build failed because of webpack errors
+2023-01-28T08:10:41.245Z [ERROR]: !!! Build failed
+2023-01-28T08:10:41.245Z [INFO]: Please check the supported SSR features to find if your build failure is related to an unsupported feature: https://docs.aws.amazon.com/amplify/latest/userguide/ssr-Amplify-support.html#supported-unsupported-features. You may also find this troubleshooting guide useful: https://docs.aws.amazon.com/amplify/latest/userguide/troubleshooting-ssr-deployment.html
+2023-01-28T08:10:41.245Z [ERROR]: !!! Non-Zero Exit Code detected
+2023-01-28T08:10:41.245Z [INFO]: # Starting environment caching...
+2023-01-28T08:10:41.245Z [INFO]: # Environment caching completed
+Terminating logging...

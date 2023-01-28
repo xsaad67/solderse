@@ -1,0 +1,300 @@
+2020-08-20T00:47:53.867Z [INFO]: # Cloning repository: https://git-codecommit.us-east-1.amazonaws.com/v1/repos/frp-ui-client
+2020-08-20T00:47:54.107Z [INFO]: Cloning into 'frp-ui-client'...
+2020-08-20T00:47:55.310Z [INFO]: remote:
+2020-08-20T00:47:57.093Z [INFO]: remote: Counting objects: 0
+2020-08-20T00:47:57.217Z [INFO]: remote: Counting objects: 2451
+2020-08-20T00:47:57.680Z [INFO]: remote: Counting objects: 2451remote: Counting objects: 2451, done.
+2020-08-20T00:48:02.108Z [INFO]: Receiving objects:   0% (1/2451)
+2020-08-20T00:48:02.144Z [INFO]: Receiving objects:   1% (25/2451)
+2020-08-20T00:48:02.146Z [INFO]: Receiving objects:   2% (50/2451)
+2020-08-20T00:48:02.182Z [INFO]: Receiving objects:   3% (74/2451)
+2020-08-20T00:48:02.202Z [INFO]: Receiving objects:   4% (99/2451)
+2020-08-20T00:48:02.212Z [INFO]: Receiving objects:   5% (123/2451)
+2020-08-20T00:48:02.212Z [INFO]: Receiving objects:   6% (148/2451)
+2020-08-20T00:48:02.217Z [INFO]: Receiving objects:   7% (172/2451)
+2020-08-20T00:48:02.222Z [INFO]: Receiving objects:   8% (197/2451)
+2020-08-20T00:48:02.318Z [INFO]: Receiving objects:   9% (221/2451)
+2020-08-20T00:48:02.386Z [INFO]: Receiving objects:  10% (246/2451)
+2020-08-20T00:48:02.391Z [INFO]: Receiving objects:  11% (270/2451)
+2020-08-20T00:48:02.393Z [INFO]: Receiving objects:  12% (295/2451)
+2020-08-20T00:48:02.424Z [INFO]: Receiving objects:  13% (319/2451)
+2020-08-20T00:48:02.426Z [INFO]: Receiving objects:  14% (344/2451)
+2020-08-20T00:48:02.426Z [INFO]: Receiving objects:  15% (368/2451)
+2020-08-20T00:48:02.427Z [INFO]: Receiving objects:  16% (393/2451)
+2020-08-20T00:48:02.429Z [INFO]: Receiving objects:  17% (417/2451)
+2020-08-20T00:48:02.429Z [INFO]: Receiving objects:  18% (442/2451)
+2020-08-20T00:48:02.430Z [INFO]: Receiving objects:  19% (466/2451)
+2020-08-20T00:48:02.436Z [INFO]: Receiving objects:  20% (491/2451)
+2020-08-20T00:48:02.438Z [INFO]: Receiving objects:  21% (515/2451)
+2020-08-20T00:48:02.448Z [INFO]: Receiving objects:  22% (540/2451)
+2020-08-20T00:48:02.482Z [INFO]: Receiving objects:  23% (564/2451)
+2020-08-20T00:48:02.485Z [INFO]: Receiving objects:  24% (589/2451)
+2020-08-20T00:48:02.555Z [INFO]: Receiving objects:  25% (613/2451)
+2020-08-20T00:48:02.580Z [INFO]: Receiving objects:  26% (638/2451)
+2020-08-20T00:48:02.583Z [INFO]: Receiving objects:  27% (662/2451)
+2020-08-20T00:48:02.594Z [INFO]: Receiving objects:  28% (687/2451)
+2020-08-20T00:48:02.596Z [INFO]: Receiving objects:  29% (711/2451)
+2020-08-20T00:48:02.618Z [INFO]: Receiving objects:  30% (736/2451), 7.20 MiB | 14.40 MiB/s
+2020-08-20T00:48:02.620Z [INFO]: Receiving objects:  31% (760/2451), 7.20 MiB | 14.40 MiB/s
+2020-08-20T00:48:02.620Z [INFO]: Receiving objects:  32% (785/2451), 7.20 MiB | 14.40 MiB/s
+2020-08-20T00:48:02.623Z [INFO]: Receiving objects:  33% (809/2451), 7.20 MiB | 14.40 MiB/s
+2020-08-20T00:48:02.624Z [INFO]: Receiving objects:  34% (834/2451), 7.20 MiB | 14.40 MiB/s
+2020-08-20T00:48:02.624Z [INFO]: Receiving objects:  35% (858/2451), 7.20 MiB | 14.40 MiB/s
+2020-08-20T00:48:02.647Z [INFO]: Receiving objects:  36% (883/2451), 7.20 MiB | 14.40 MiB/s
+2020-08-20T00:48:02.649Z [INFO]: Receiving objects:  37% (907/2451), 7.20 MiB | 14.40 MiB/s
+2020-08-20T00:48:02.650Z [INFO]: Receiving objects:  38% (932/2451), 7.20 MiB | 14.40 MiB/s
+2020-08-20T00:48:02.651Z [INFO]: Receiving objects:  39% (956/2451), 7.20 MiB | 14.40 MiB/s
+2020-08-20T00:48:02.651Z [INFO]: Receiving objects:  40% (981/2451), 7.20 MiB | 14.40 MiB/s
+2020-08-20T00:48:02.652Z [INFO]: Receiving objects:  41% (1005/2451), 7.20 MiB | 14.40 MiB/s
+2020-08-20T00:48:02.678Z [INFO]: Receiving objects:  42% (1030/2451), 7.20 MiB | 14.40 MiB/s
+2020-08-20T00:48:02.678Z [INFO]: Receiving objects:  43% (1054/2451), 7.20 MiB | 14.40 MiB/s
+2020-08-20T00:48:02.678Z [INFO]: Receiving objects:  44% (1079/2451), 7.20 MiB | 14.40 MiB/s                                                                                Receiving objects:  45% (1103/2451), 7.20 MiB | 14.40 MiB/s                                                                                Receiving objects:  46% (1128/2451), 7.20 MiB | 14.40 MiB/s                                                                                Receiving objects:  47% (1152/2451), 7.20 MiB | 14.40 MiB/s
+2020-08-20T00:48:02.679Z [INFO]: Receiving objects:  48% (1177/2451), 7.20 MiB | 14.40 MiB/s                                                                                Receiving objects:  49% (1201/2451), 7.20 MiB | 14.40 MiB/s
+2020-08-20T00:48:02.679Z [INFO]: Receiving objects:  50% (1226/2451), 7.20 MiB | 14.40 MiB/s
+2020-08-20T00:48:02.679Z [INFO]: Receiving objects:  51% (1251/2451), 7.20 MiB | 14.40 MiB/s
+2020-08-20T00:48:02.690Z [INFO]: Receiving objects:  52% (1275/2451), 7.20 MiB | 14.40 MiB/s
+2020-08-20T00:48:02.743Z [INFO]: Receiving objects:  53% (1300/2451), 7.20 MiB | 14.40 MiB/s
+2020-08-20T00:48:02.871Z [INFO]: Receiving objects:  54% (1324/2451), 7.20 MiB | 14.40 MiB/s
+2020-08-20T00:48:02.877Z [INFO]: Receiving objects:  55% (1349/2451), 7.20 MiB | 14.40 MiB/s
+2020-08-20T00:48:02.877Z [INFO]: Receiving objects:  56% (1373/2451), 7.20 MiB | 14.40 MiB/s
+2020-08-20T00:48:02.880Z [INFO]: Receiving objects:  57% (1398/2451), 7.20 MiB | 14.40 MiB/s
+2020-08-20T00:48:02.880Z [INFO]: Receiving objects:  58% (1422/2451), 7.20 MiB | 14.40 MiB/s                                                                                Receiving objects:  59% (1447/2451), 7.20 MiB | 14.40 MiB/s
+2020-08-20T00:48:02.881Z [INFO]: Receiving objects:  60% (1471/2451), 7.20 MiB | 14.40 MiB/s                                                                                Receiving objects:  61% (1496/2451), 7.20 MiB | 14.40 MiB/s
+2020-08-20T00:48:02.881Z [INFO]: Receiving objects:  62% (1520/2451), 7.20 MiB | 14.40 MiB/s
+2020-08-20T00:48:02.881Z [INFO]: Receiving objects:  63% (1545/2451), 7.20 MiB | 14.40 MiB/s
+2020-08-20T00:48:02.889Z [INFO]: Receiving objects:  64% (1569/2451), 7.20 MiB | 14.40 MiB/s
+2020-08-20T00:48:02.889Z [INFO]: Receiving objects:  65% (1594/2451), 7.20 MiB | 14.40 MiB/s                                                                                Receiving objects:  66% (1618/2451), 7.20 MiB | 14.40 MiB/s
+2020-08-20T00:48:02.891Z [INFO]: Receiving objects:  67% (1643/2451), 7.20 MiB | 14.40 MiB/s
+2020-08-20T00:48:02.891Z [INFO]: Receiving objects:  68% (1667/2451), 7.20 MiB | 14.40 MiB/s
+2020-08-20T00:48:02.891Z [INFO]: Receiving objects:  69% (1692/2451), 7.20 MiB | 14.40 MiB/s
+2020-08-20T00:48:02.893Z [INFO]: Receiving objects:  70% (1716/2451), 7.20 MiB | 14.40 MiB/s
+2020-08-20T00:48:02.893Z [INFO]: Receiving objects:  71% (1741/2451), 7.20 MiB | 14.40 MiB/s
+2020-08-20T00:48:02.893Z [INFO]: Receiving objects:  72% (1765/2451), 7.20 MiB | 14.40 MiB/s
+2020-08-20T00:48:02.895Z [INFO]: Receiving objects:  73% (1790/2451), 7.20 MiB | 14.40 MiB/s
+2020-08-20T00:48:02.895Z [INFO]: Receiving objects:  74% (1814/2451), 7.20 MiB | 14.40 MiB/s
+2020-08-20T00:48:02.895Z [INFO]: Receiving objects:  75% (1839/2451), 7.20 MiB | 14.40 MiB/s
+2020-08-20T00:48:02.897Z [INFO]: Receiving objects:  76% (1863/2451), 7.20 MiB | 14.40 MiB/s
+2020-08-20T00:48:02.897Z [INFO]: Receiving objects:  77% (1888/2451), 7.20 MiB | 14.40 MiB/s                                                                                Receiving objects:  78% (1912/2451), 7.20 MiB | 14.40 MiB/s
+2020-08-20T00:48:02.897Z [INFO]: Receiving objects:  79% (1937/2451), 7.20 MiB | 14.40 MiB/s
+2020-08-20T00:48:02.897Z [INFO]: Receiving objects:  80% (1961/2451), 7.20 MiB | 14.40 MiB/s                                                                                Receiving objects:  81% (1986/2451), 7.20 MiB | 14.40 MiB/s
+2020-08-20T00:48:02.898Z [INFO]: Receiving objects:  82% (2010/2451), 7.20 MiB | 14.40 MiB/s
+2020-08-20T00:48:02.899Z [INFO]: Receiving objects:  83% (2035/2451), 7.20 MiB | 14.40 MiB/s
+2020-08-20T00:48:02.909Z [INFO]: Receiving objects:  84% (2059/2451), 7.20 MiB | 14.40 MiB/s
+2020-08-20T00:48:02.909Z [INFO]: Receiving objects:  85% (2084/2451), 7.20 MiB | 14.40 MiB/s
+2020-08-20T00:48:02.910Z [INFO]: Receiving objects:  86% (2108/2451), 7.20 MiB | 14.40 MiB/s
+2020-08-20T00:48:02.910Z [INFO]: Receiving objects:  87% (2133/2451), 7.20 MiB | 14.40 MiB/s
+2020-08-20T00:48:02.911Z [INFO]: Receiving objects:  88% (2157/2451), 7.20 MiB | 14.40 MiB/s
+2020-08-20T00:48:02.912Z [INFO]: Receiving objects:  89% (2182/2451), 7.20 MiB | 14.40 MiB/s
+2020-08-20T00:48:02.912Z [INFO]: Receiving objects:  90% (2206/2451), 7.20 MiB | 14.40 MiB/s
+2020-08-20T00:48:02.918Z [INFO]: Receiving objects:  91% (2231/2451), 7.20 MiB | 14.40 MiB/s
+2020-08-20T00:48:02.920Z [INFO]: Receiving objects:  92% (2255/2451), 7.20 MiB | 14.40 MiB/s
+2020-08-20T00:48:02.921Z [INFO]: Receiving objects:  93% (2280/2451), 7.20 MiB | 14.40 MiB/s
+2020-08-20T00:48:02.922Z [INFO]: Receiving objects:  94% (2304/2451), 7.20 MiB | 14.40 MiB/s
+2020-08-20T00:48:02.925Z [INFO]: Receiving objects:  95% (2329/2451), 7.20 MiB | 14.40 MiB/s
+2020-08-20T00:48:02.927Z [INFO]: Receiving objects:  96% (2353/2451), 7.20 MiB | 14.40 MiB/s
+2020-08-20T00:48:02.927Z [INFO]: Receiving objects:  97% (2378/2451), 7.20 MiB | 14.40 MiB/s
+2020-08-20T00:48:02.928Z [INFO]: Receiving objects:  98% (2402/2451), 7.20 MiB | 14.40 MiB/s
+2020-08-20T00:48:02.928Z [INFO]: Receiving objects:  99% (2427/2451), 7.20 MiB | 14.40 MiB/s
+2020-08-20T00:48:02.929Z [INFO]: Receiving objects: 100% (2451/2451), 7.20 MiB | 14.40 MiB/s
+2020-08-20T00:48:02.930Z [INFO]: Receiving objects: 100% (2451/2451), 15.23 MiB | 18.57 MiB/s, done.
+2020-08-20T00:48:02.930Z [INFO]: Resolving deltas:   0% (0/1234)
+2020-08-20T00:48:02.930Z [INFO]: Resolving deltas:   1% (16/1234)
+2020-08-20T00:48:02.931Z [INFO]: Resolving deltas:   2% (31/1234)                                                                                Resolving deltas:   3% (40/1234)                                                                                Resolving deltas:   4% (54/1234)
+2020-08-20T00:48:02.931Z [INFO]: Resolving deltas:   5% (65/1234)
+2020-08-20T00:48:02.931Z [INFO]: Resolving deltas:   8% (105/1234)
+2020-08-20T00:48:02.932Z [INFO]: Resolving deltas:  10% (132/1234)                                                                                Resolving deltas:  11% (141/1234)
+2020-08-20T00:48:02.932Z [INFO]: Resolving deltas:  12% (153/1234)
+2020-08-20T00:48:02.935Z [INFO]: Resolving deltas:  13% (165/1234)                                                                                Resolving deltas:  14% (180/1234)                                                                                Resolving deltas:  15% (187/1234)                                                                                Resolving deltas:  17% (212/1234)                                                                                Resolving deltas:  18% (229/1234)                                                                                Resolving deltas:  19% (238/1234)
+2020-08-20T00:48:02.935Z [INFO]: Resolving deltas:  20% (248/1234)
+2020-08-20T00:48:02.936Z [INFO]: Resolving deltas:  21% (262/1234)
+2020-08-20T00:48:02.936Z [INFO]: Resolving deltas:  23% (284/1234)
+2020-08-20T00:48:02.937Z [INFO]: Resolving deltas:  24% (297/1234)
+2020-08-20T00:48:02.938Z [INFO]: Resolving deltas:  25% (314/1234)
+2020-08-20T00:48:02.938Z [INFO]: Resolving deltas:  26% (323/1234)
+2020-08-20T00:48:02.938Z [INFO]: Resolving deltas:  27% (339/1234)
+2020-08-20T00:48:02.938Z [INFO]: Resolving deltas:  28% (347/1234)
+2020-08-20T00:48:02.939Z [INFO]: Resolving deltas:  29% (367/1234)
+2020-08-20T00:48:02.939Z [INFO]: Resolving deltas:  30% (371/1234)
+2020-08-20T00:48:02.940Z [INFO]: Resolving deltas:  31% (391/1234)
+2020-08-20T00:48:02.941Z [INFO]: Resolving deltas:  32% (402/1234)
+2020-08-20T00:48:02.941Z [INFO]: Resolving deltas:  33% (408/1234)
+2020-08-20T00:48:02.944Z [INFO]: Resolving deltas:  35% (433/1234)
+2020-08-20T00:48:02.944Z [INFO]: Resolving deltas:  36% (446/1234)
+2020-08-20T00:48:02.946Z [INFO]: Resolving deltas:  37% (457/1234)
+2020-08-20T00:48:02.947Z [INFO]: Resolving deltas:  38% (477/1234)
+2020-08-20T00:48:02.948Z [INFO]: Resolving deltas:  39% (482/1234)
+2020-08-20T00:48:02.948Z [INFO]: Resolving deltas:  40% (503/1234)
+2020-08-20T00:48:02.948Z [INFO]: Resolving deltas:  41% (507/1234)
+2020-08-20T00:48:02.948Z [INFO]: Resolving deltas:  42% (519/1234)
+2020-08-20T00:48:02.949Z [INFO]: Resolving deltas:  43% (539/1234)
+2020-08-20T00:48:02.950Z [INFO]: Resolving deltas:  44% (550/1234)
+2020-08-20T00:48:02.950Z [INFO]: Resolving deltas:  45% (561/1234)
+2020-08-20T00:48:02.950Z [INFO]: Resolving deltas:  46% (568/1234)
+2020-08-20T00:48:02.951Z [INFO]: Resolving deltas:  47% (586/1234)
+2020-08-20T00:48:02.951Z [INFO]: Resolving deltas:  48% (595/1234)
+2020-08-20T00:48:02.951Z [INFO]: Resolving deltas:  52% (642/1234)
+2020-08-20T00:48:02.951Z [INFO]: Resolving deltas:  53% (657/1234)                                                                                Resolving deltas:  54% (667/1234)
+2020-08-20T00:48:02.951Z [INFO]: Resolving deltas:  55% (681/1234)                                                                                Resolving deltas:  56% (692/1234)
+2020-08-20T00:48:02.952Z [INFO]: Resolving deltas:  60% (750/1234)
+2020-08-20T00:48:02.952Z [INFO]: Resolving deltas:  61% (754/1234)                                                                                Resolving deltas:  62% (766/1234)                                                                                Resolving deltas:  64% (790/1234)
+2020-08-20T00:48:02.952Z [INFO]: Resolving deltas:  65% (804/1234)                                                                                Resolving deltas:  66% (816/1234)                                                                                Resolving deltas:  67% (828/1234)
+2020-08-20T00:48:02.952Z [INFO]: Resolving deltas:  68% (843/1234)                                                                                Resolving deltas:  69% (853/1234)
+2020-08-20T00:48:02.953Z [INFO]: Resolving deltas:  74% (919/1234)
+2020-08-20T00:48:02.953Z [INFO]: Resolving deltas:  76% (938/1234)                                                                                Resolving deltas:  77% (953/1234)
+2020-08-20T00:48:02.953Z [INFO]: Resolving deltas:  78% (971/1234)                                                                                Resolving deltas:  79% (976/1234)                                                                                Resolving deltas:  80% (991/1234)
+2020-08-20T00:48:02.953Z [INFO]: Resolving deltas:  81% (1001/1234)
+2020-08-20T00:48:02.953Z [INFO]: Resolving deltas:  82% (1012/1234)
+2020-08-20T00:48:02.954Z [INFO]: Resolving deltas:  83% (1025/1234)
+2020-08-20T00:48:02.954Z [INFO]: Resolving deltas:  84% (1045/1234)
+2020-08-20T00:48:02.954Z [INFO]: Resolving deltas:  86% (1063/1234)
+2020-08-20T00:48:02.955Z [INFO]: Resolving deltas:  87% (1074/1234)
+2020-08-20T00:48:02.955Z [INFO]: Resolving deltas:  88% (1089/1234)
+2020-08-20T00:48:02.955Z [INFO]: Resolving deltas:  89% (1104/1234)
+2020-08-20T00:48:02.955Z [INFO]: Resolving deltas:  90% (1115/1234)
+2020-08-20T00:48:02.961Z [INFO]: Resolving deltas:  91% (1130/1234)                                                                                Resolving deltas:  92% (1139/1234)                                                                                Resolving deltas:  96% (1187/1234)                                                                                Resolving deltas:  97% (1198/1234)
+2020-08-20T00:48:03.060Z [INFO]: Resolving deltas: 100% (1234/1234)
+2020-08-20T00:48:03.060Z [INFO]: Resolving deltas: 100% (1234/1234), done.
+2020-08-20T00:48:03.273Z [INFO]: # Switching to commit: 3904cd84879d20657c33241e9bf40622bab9edf2
+2020-08-20T00:48:03.441Z [INFO]: Note: switching to '3904cd84879d20657c33241e9bf40622bab9edf2'.
+                                 You are in 'detached HEAD' state. You can look around, make experimental
+                                 changes and commit them, and you can discard any commits you make in this
+                                 state without impacting any branches by switching back to a branch.
+                                 If you want to create a new branch to retain commits you create, you may
+                                 do so (now or later) by using -c with the switch command. Example:
+                                 git switch -c <new-branch-name>
+                                 Or undo this operation with:
+                                 git switch -
+                                 Turn off this advice by setting config variable advice.detachedHead to false
+                                 HEAD is now at 3904cd8 Removed Exit Codes
+2020-08-20T00:48:03.442Z [INFO]: # Checking for Git submodules at: /codebuild/output/src549333926/src/frp-ui-client/.gitmodules
+2020-08-20T00:48:03.468Z [INFO]: # Retrieving cache...
+2020-08-20T00:49:11.738Z [INFO]: # Extracting cache...
+2020-08-20T00:49:59.792Z [INFO]: # Extraction completed
+2020-08-20T00:50:00.061Z [INFO]: # Retrieving environment cache...
+2020-08-20T00:50:00.116Z [INFO]: # Retrieved environment cache
+2020-08-20T00:50:00.118Z [INFO]: # Ensuring NPM package 'yarn' is version: 'latest'
+2020-08-20T00:50:00.164Z [INFO]: # Unable to determine local version for yarn, assuming 0.0
+2020-08-20T00:50:00.165Z [INFO]: # Patching NPM package 'yarn' from 0.0 to 1.22.4...
+2020-08-20T00:50:01.736Z [INFO]: # Done patching NPM package 'yarn'
+2020-08-20T00:50:01.883Z [INFO]: ## Starting Frontend Build
+                                 # Starting phase: preBuild
+                                 # Executing command: yarn install  2> >(grep -v warning 1>&2)
+2020-08-20T00:50:02.123Z [INFO]: yarn install v1.22.4
+2020-08-20T00:50:02.258Z [INFO]: [1/4] Resolving packages...
+2020-08-20T00:50:03.188Z [INFO]: [2/4] Fetching packages...
+2020-08-20T00:50:47.852Z [INFO]: info fsevents@1.2.13: The platform "linux" is incompatible with this module.
+2020-08-20T00:50:47.855Z [INFO]: info "fsevents@1.2.13" is an optional dependency and failed compatibility check. Excluding it from installation.
+2020-08-20T00:50:47.858Z [INFO]: info fsevents@2.1.3: The platform "linux" is incompatible with this module.
+2020-08-20T00:50:47.860Z [INFO]: info "fsevents@2.1.3" is an optional dependency and failed compatibility check. Excluding it from installation.
+2020-08-20T00:50:47.883Z [INFO]: [3/4] Linking dependencies...
+2020-08-20T01:03:08.380Z [INFO]: [4/4] Building fresh packages...
+2020-08-20T01:03:24.957Z [INFO]: Done in 802.84s.
+2020-08-20T01:03:25.095Z [INFO]: # Completed phase: preBuild
+                                 # Starting phase: build
+                                 # Executing command: npx cross-env NODE_ENV=development BABEL_ENV=development yarn run prod:latest:build:amplify
+2020-08-20T01:03:25.332Z [INFO]: yarn run v1.22.4
+2020-08-20T01:03:25.360Z [INFO]: $ yarn run build
+2020-08-20T01:03:25.602Z [INFO]: $ cross-env NODE_ENV=production BABEL_ENV=production  node --max_old_space_size=6144 ./node_modules/webpack/bin/webpack.js --config ./.config/webpack.config.babel.js --mode production
+2020-08-20T01:04:58.732Z [INFO]: Done in 93.41s.
+2020-08-20T01:04:58.739Z [INFO]: # Completed phase: build
+                                 # Starting phase: postBuild
+2020-08-20T01:04:58.741Z [INFO]: # Executing command: ls dist/*
+2020-08-20T01:04:58.744Z [INFO]: dist/10.75687149.js
+                                 dist/5.265cacad.js
+                                 dist/65.20cdc11d.js
+                                 dist/65.20cdc11d.js.LICENSE.txt
+                                 dist/66.d5500b81.js
+                                 dist/66.d5500b81.js.LICENSE.txt
+                                 dist/67.167cf8a3.js
+                                 dist/67.167cf8a3.js.LICENSE.txt
+                                 dist/68.558f4ec6.js
+                                 dist/68.558f4ec6.js.LICENSE.txt
+                                 dist/7.07a7c696.js
+                                 dist/7.07a7c696.js.LICENSE.txt
+                                 dist/8.7736c4d7.js
+                                 dist/8.7736c4d7.js.LICENSE.txt
+                                 dist/ads-learnmore-pagepage1.60a3b987.js
+                                 dist/ads-learnmore-pagepage2.3d338e30.js
+                                 dist/ads-learnmore-pagepage2-index-old.593e9a58.js
+                                 dist/ads-learnmore-pagepage2-index-stories2.d91f1d4e.js
+                                 dist/ads-learnmore-pagepage2-styles.ea346014.js
+                                 dist/ads-learnmore-pagepage3.cccb63f4.js
+                                 dist/ads-learnmore-pagepage3-index-old.316bdc75.js
+                                 dist/ads-learnmore-pagepage3-styles.aa27e42b.js
+                                 dist/ads-learnmore-pagepage4.76ee4c38.js
+                                 dist/ads-learnmore-pagepage4-index-old.47c377ce.js
+                                 dist/ads-learnmore-pagepage4-styles.caa8f0d3.js
+                                 dist/ads-learnmore-pagepage5.b95d0fc6.js
+                                 dist/ads-learnmore-pagepage5-index-old.f0b7a625.js
+                                 dist/ads-learnmore-pagepage5-styles.2490b68a.js
+                                 dist/ads-learnmore-pagepage6.2248d967.js
+                                 dist/ads-learnmore-pagepage6-index-old.3c9014a3.js
+                                 dist/ads-learnmore-pagepage6-styles.4249ef08.js
+                                 dist/ads-learnmore-pagepage7.04f62c68.js
+                                 dist/ads-learnmore-pagepage7-index-old.e3a3925f.js
+                                 dist/ads-learnmore-pagepage7-styles.a0ec3473.js
+                                 dist/AmplifyBridge.908d8750.js
+                                 dist/AppMain.b72877f4.js
+                                 dist/default~ads-learnmore-pagepage2~ads-learnmore-pagepage2-index-stories2~ads-learnmore-pagepage4.e08966ea.js
+                                 dist/default~ads-learnmore-pagepage3~ads-learnmore-pagepage6~ads-learnmore-pagepage7.1b966dda.js
+                                 dist/favicon.ico
+                                 dist/home.69fad100.js
+                                 dist/icon_128x128.png
+                                 dist/icon_192x192.png
+                                 dist/icon_256x256.png
+                                 dist/icon_384x384.png
+                                 dist/icon_512x512.png
+                                 dist/icon_96x96.png
+                                 dist/index.html
+                                 dist/main.e78e1934.js
+                                 dist/manifest.json
+                                 dist/pages-about.9d650e24.js
+                                 dist/pages-adhoc.7bcb0717.js
+                                 dist/pages-adhoc.7bcb0717.js.LICENSE.txt
+                                 dist/pages-analytics.75c76494.js
+                                 dist/pages-analytics.75c76494.js.LICENSE.txt
+                                 dist/pages-certifcation.92a34ec4.js
+                                 dist/pages-certifcation.92a34ec4.js.LICENSE.txt
+                                 dist/pages-consumer-benefits.04e7cf30.js
+                                 dist/pages-contact-us.2549dc18.js
+                                 dist/pages-firm.bb092640.js
+                                 dist/pages-firm.bb092640.js.LICENSE.txt
+                                 dist/pages-freque.47c7fc8d.js
+                                 dist/pages-how-it-works.bfd25c77.js
+                                 dist/pages-industry-benefits.a0d730b7.js
+                                 dist/pages-login.24b9c078.js
+                                 dist/pages-membership.f1b1c85d.js
+                                 dist/pages-not-found.2483051b.js
+                                 dist/pages-privacy-policy.8c633546.js
+                                 dist/pages-settings.54b8a714.js
+                                 dist/pages-settings.54b8a714.js.LICENSE.txt
+                                 dist/pages-signup.c065adf2.js
+                                 dist/pages-suspend.d2e3e895.js
+                                 dist/pages-suspend.d2e3e895.js.LICENSE.txt
+                                 dist/pages-terms-of-use.f7bc343b.js
+                                 dist/redux.7a32fd74.js
+                                 dist/robots.txt
+                                 dist/runtime.ac6e20ce.js
+                                 dist/service-worker.js
+                                 dist/styled.0a25104c.js
+                                 dist/styles.bfa746f1.js
+                                 dist/theme.574018dd.js
+                                 dist/vendors~ads-learnmore-pagepage2-index-old.0013d6ae.js
+                                 dist/vendors~ads-learnmore-pagepage2-index-old.0013d6ae.js.LICENSE.txt
+                                 dist/vendors~ads-learnmore-pagepage2-index-old~ads-learnmore-pagepage2-index-stories2.a12faea9.js
+                                 dist/vendors~ads-learnmore-pagepage2-index-stories2.dc0e0da1.js
+                                 dist/vendors~ads-learnmore-pagepage2-index-stories2.dc0e0da1.js.LICENSE.txt
+                                 dist/vendors~ads-learnmore-pagepage2-index-stories2~styled.82591753.js
+                                 dist/vendors~AmplifyBridge~redux.726749e6.js
+                                 dist/vendors~home~pages-about~pages-adhoc~pages-analytics~pages-certifcation~pages-consumer-benefits~page~46460d3d.95a544ca.js
+                                 dist/vendors~home~pages-about~pages-adhoc~pages-analytics~pages-certifcation~pages-consumer-benefits~page~7c6d502e.3b5389cc.js
+                                 dist/vendors~home~pages-about~pages-adhoc~pages-analytics~pages-certifcation~pages-consumer-benefits~page~7fd1c8a2.eaf44c8b.js
+                                 dist/vendors~home~pages-about~pages-adhoc~pages-analytics~pages-certifcation~pages-consumer-benefits~page~84d37fb0.3fb5b0ad.js
+                                 dist/vendors~main.7d6e1ea1.js
+                                 dist/vendors~main.7d6e1ea1.js.LICENSE.txt
+                                 dist/vendors~redux.f38e7f04.js
+                                 dist/vendors~theme.ce6ae588.js
+                                 dist/workbox-4dae1fa6.js
+2020-08-20T01:04:58.746Z [INFO]: # Completed phase: postBuild
+                                 ## Completed Frontend Build
+2020-08-20T01:04:58.765Z [INFO]: ## Build completed successfully
