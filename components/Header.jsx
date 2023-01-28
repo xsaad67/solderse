@@ -25,7 +25,7 @@ export default function Header() {
                                 launchpad aims to make web3 global.
                             </h2>
                             <p className="max-w-xl mb-4 text-base text-gray-200 md:text-lg">
-                                Solderse is a communtiy driven innovative launchpad aimed to make blockchain community more welcoming through it's AI driven platform.
+                                Solderse is a communtiy driven innovative launchpad aimed to make blockchain community more welcoming through it&apos;s AI driven platform.
                             </p>
 
                             <a
