@@ -7,11 +7,10 @@ import Tokenomics from '../components/Tokenomics'
 import Features from '../components/Features'
 import Roadmap from '../components/Roadmap'
 import Teams from '../components/Teams'
+import Faqs from '../components/Faqs'
+import Highlights from '../components/Highlights'
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
-
-
 
 export default function Home() {
   return (
@@ -22,8 +21,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar></Navbar>
-
-      <main className='relative'>
+      <main className='relative bg-indigo-50'>
         <ToastContainer
           position="top-right"
           autoClose={5000}
@@ -36,24 +34,20 @@ export default function Home() {
           pauseOnHover
           theme="light"
         />
-
-        {/* Same as */}
         <ToastContainer />
-
-
         <Header></Header>
         <About></About>
-        <Tokenomics></Tokenomics>
         <Roadmap></Roadmap>
 
+        <Tokenomics></Tokenomics>
+
         <Features></Features>
-
         <Teams></Teams>
-        {/* <Faq></Faq> */}
+        <Highlights></Highlights>
+        <Faqs></Faqs>
+        <Footer></Footer>
+      </main >
 
-      </main>
-
-      <Footer></Footer>
     </div >
   )
 }

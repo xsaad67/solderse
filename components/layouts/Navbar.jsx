@@ -1,4 +1,3 @@
-
 import { ConnectButton } from '@web3uikit/web3'
 import { useState } from 'react';
 
@@ -12,7 +11,7 @@ export default function Navbar() {
                     <a
                         href="/"
                         aria-label="Company"
-                        title="Company"
+                        title="Solderse"
                         className="inline-flex items-center"
                     >
                         <svg
@@ -38,8 +37,6 @@ export default function Navbar() {
                         <li>
                             <a
                                 href="#about"
-                                aria-label="Our product"
-                                title="Our product"
                                 className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
                             >
                                 About Us
@@ -48,8 +45,6 @@ export default function Navbar() {
                         <li>
                             <a
                                 href="#features"
-                                aria-label="Our product"
-                                title="Our product"
                                 className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
                             >
                                 Features
@@ -57,9 +52,7 @@ export default function Navbar() {
                         </li>
                         <li>
                             <a
-                                href="#stats"
-                                aria-label="Product pricing"
-                                title="Product pricing"
+                                href="#tokenomics"
                                 className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
                             >
                                 Tokenomics
@@ -67,14 +60,38 @@ export default function Navbar() {
                         </li>
                         <li>
                             <a
-                                href="/"
-                                aria-label="About us"
-                                title="About us"
+                                href="#roadmap"
                                 className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
                             >
-                                About us
+                                RoadMap
                             </a>
                         </li>
+                        <li>
+                            <a
+                                href="#team"
+                                className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
+                            >
+                                Team
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="#faqs"
+                                className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
+                            >
+                                Faqs
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="#faqs"
+                                className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
+                            >
+                                WhitePaper
+                            </a>
+                        </li>
+
                     </ul>
                     <ul className="flex items-center hidden space-x-8 lg:flex">
                         <li>
@@ -111,7 +128,7 @@ export default function Navbar() {
                                             <a
                                                 href="/"
                                                 aria-label="Company"
-                                                title="Company"
+                                                title="Solderse"
                                                 className="inline-flex items-center"
                                             >
                                                 <svg
@@ -130,7 +147,7 @@ export default function Navbar() {
                                                     <rect x="14" y="11" width="7" height="12" />
                                                 </svg>
                                                 <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
-                                                    Company
+                                                    Solderse
                                                 </span>
                                             </a>
                                         </div>
@@ -152,49 +169,66 @@ export default function Navbar() {
                                     </div>
                                     <nav>
                                         <ul className="space-y-4">
+
                                             <li>
                                                 <a
-                                                    href="/"
-                                                    aria-label="Our product"
-                                                    title="Our product"
-                                                    className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                                                    href="#about"
+                                                    className="font-medium tracking-wide text-gray-900 transition-colors duration-200 hover:text-teal-accent-400"
                                                 >
-                                                    Product
+                                                    About Us
                                                 </a>
                                             </li>
                                             <li>
                                                 <a
-                                                    href="/"
-                                                    aria-label="Our product"
-                                                    title="Our product"
-                                                    className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                                                    href="#features"
+                                                    className="font-medium tracking-wide text-gray-900 transition-colors duration-200 hover:text-teal-accent-400"
                                                 >
                                                     Features
                                                 </a>
                                             </li>
                                             <li>
                                                 <a
-                                                    href="/"
-                                                    aria-label="Product pricing"
-                                                    title="Product pricing"
-                                                    className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                                                    href="#tokenomics"
+                                                    className="font-medium tracking-wide text-gray-900 transition-colors duration-200 hover:text-teal-accent-400"
                                                 >
-                                                    Pricing
+                                                    Tokenomics
                                                 </a>
                                             </li>
                                             <li>
                                                 <a
-                                                    href="/"
-                                                    aria-label="About us"
-                                                    title="About us"
-                                                    className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                                                    href="#roadmap"
+                                                    className="font-medium tracking-wide text-gray-900 transition-colors duration-200 hover:text-teal-accent-400"
                                                 >
-                                                    About us
+                                                    RoadMap
                                                 </a>
                                             </li>
-                                            <li
+                                            <li>
+                                                <a
+                                                    href="#team"
+                                                    className="font-medium tracking-wide text-gray-900 transition-colors duration-200 hover:text-teal-accent-400"
+                                                >
+                                                    Team
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="#faqs"
+                                                    className="font-medium tracking-wide text-gray-900 transition-colors duration-200 hover:text-teal-accent-400"
+                                                >
+                                                    Faqs
+                                                </a>
+                                            </li>
 
-                                                className="inline-flex items-center justify-center w-full h-12">
+                                            <li>
+                                                <a
+                                                    href="#"
+                                                    className="font-medium tracking-wide text-gray-900 transition-colors duration-200 hover:text-teal-accent-400"
+                                                >
+                                                    WhitePaper
+                                                </a>
+                                            </li>
+                                            <li className="inline-flex items-center justify-center w-full h-12">
+                                                <div id="c-connectButton"> <ConnectButton></ConnectButton></div>
 
                                             </li>
                                         </ul>

@@ -6,6 +6,11 @@
     html {
         @apply scroll-smooth;
     }
+
+    body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
 }
 
 /* To hide other wallets from walletconnect modal */

@@ -10,12 +10,9 @@ import { toast } from 'react-toastify';
 
 
 export default function Transactions() {
-
     const { register, handleSubmit, setError, formState: { isSubmitting, errors } } = useForm();
     const { isWeb3Enabled, account, chainId: chainIdHex, Moralis } = useMoralis();
     const chainId = Number(chainIdHex);
-
-
     const saleAddress = chainId in contractAddresses ? contractAddresses[chainId]['sale'].toString() : null
 
     const [amountToBuy, setAmountToBuy] = useState("0");
