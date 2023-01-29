@@ -10,15 +10,15 @@ export default function Footer() {
                 <div class="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
                     <div class="sm:col-span-2">
                         <Link href="/" aria-label="Go home" title="Company" class="inline-flex items-center">
-                            <div>
-                                <svg class="w-8  text-white" viewBox="0 0 24 24" stroke-linejoin="round" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" stroke="currentColor" fill="none">
-                                    <rect x="3" y="1" width="7" height="12"></rect>
-                                    <rect x="3" y="17" width="7" height="6"></rect>
-                                    <rect x="14" y="1" width="7" height="6"></rect>
-                                    <rect x="14" y="11" width="7" height="12"></rect>
-                                </svg>
-                                <span class="ml-2 text-xl font-bold tracking-wide  text-white uppercase">Solderse</span>
-                            </div>
+
+                            <svg class="w-8  text-white" viewBox="0 0 24 24" stroke-linejoin="round" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" stroke="currentColor" fill="none">
+                                <rect x="3" y="1" width="7" height="12"></rect>
+                                <rect x="3" y="17" width="7" height="6"></rect>
+                                <rect x="14" y="1" width="7" height="6"></rect>
+                                <rect x="14" y="11" width="7" height="12"></rect>
+                            </svg>
+                            <span class="ml-2 text-xl font-bold tracking-wide  text-white uppercase">Solderse</span>
+
                         </Link>
                         <div class="mt-6 lg:max-w-sm">
                             <p class="text-sm  text-white">
