@@ -106,10 +106,13 @@ contract Sale is ReentrancyGuard, Context, Ownable {
             "Crowdsale: beneficiary is the zero address"
         );
         require(weiAmount != 0, "Crowdsale: weiAmount is 0");
-        require(weiAmount >= minPurchase, "have to send at least: minPurchase");
+        require(
+            weiAmount >= minPurchase,
+            "have to send at least Minimum Purchase"
+        );
         require(
             _contributions[beneficiary].add(weiAmount) <= maxPurchase,
-            "can't buy more than: maxPurchase"
+            "Can't buy more than: Maximum Purchase"
         );
         require((_weiRaised + weiAmount) <= hardCap, "Hard Cap reached");
         this;
@@ -117,7 +120,7 @@ contract Sale is ReentrancyGuard, Context, Ownable {
 
     function buyTokens() public payable nonReentrant icoActive {
         uint256 weiAmount = msg.value;
-        // _preValidatePurchase(_msgSender(), weiAmount);
+        _preValidatePurchase(_msgSender(), weiAmount);
         uint256 tokens = _getTokenAmount(weiAmount);
         _weiRaised = _weiRaised.add(weiAmount);
         availableTokensICO = availableTokensICO - tokens;

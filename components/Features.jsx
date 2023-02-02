@@ -1,7 +1,7 @@
 
 export default function Features() {
     return (
-        <div class="bg-deep-purple-300 shadow-slate-500 shadow-2xl" id="features">
+        <div class="bg-deep-purple-600 shadow-slate-500 shadow-2xl" id="features">
 
 
             <div class="relative px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
@@ -19,7 +19,7 @@ export default function Features() {
                     <h2 class="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
 
                         <span className="relative px-1">
-                            <span className="relative inline-block text-gray-900">
+                            <span className="relative inline-block text-gray-300">
                                 Salient Features
                             </span>
                         </span>

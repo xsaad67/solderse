@@ -1,6 +1,6 @@
 import { contractAddresses, sale, solderse } from '../../constants'
 import { ConnectButton } from '@web3uikit/web3'
-import { useMoralis, useWeb3Contract } from "react-moralis";
+import { useMoralis, useWeb3Contract, useChain, useNativeBalance } from "react-moralis";
 import { useForm } from "react-hook-form";
 import truncateEthAddress from 'truncate-eth-address';
 import { env } from '../../next.config';
@@ -8,22 +8,30 @@ import { useState, useEffect } from 'react';
 import { toast } from 'react-toastify';
 
 
-
 export default function Transactions() {
     const { register, handleSubmit, setError, formState: { isSubmitting, errors } } = useForm();
     const { isWeb3Enabled, account, chainId: chainIdHex, Moralis } = useMoralis();
     const chainId = Number(chainIdHex);
+    const { switchNetwork } = useChain();
     const saleAddress = chainId in contractAddresses ? contractAddresses[chainId]['sale'].toString() : null
+
+    if (isWeb3Enabled) {
+        if (chainId !== 97) {
+            switchNetwork("0x61");
+        }
+    }
+
+
 
     const [amountToBuy, setAmountToBuy] = useState("0");
     const [buttonClicked, setButtonClicked] = useState("0");
 
     const {
         runContractFunction: buyTokens,
+        error,
         data: enterTxResponse,
         isLoading,
-        isFetching,
-        error
+        isFetching
     } = useWeb3Contract({
         abi: sale,
         contractAddress: saleAddress,
@@ -37,6 +45,9 @@ export default function Transactions() {
     const onSubmit = async (data) => {
 
         if (isWeb3Enabled) {
+            if (chainId !== 97) {
+                switchNetwork("0x61");
+            }
             setAmountToBuy(Moralis.Units.ETH(data.amount.toString()));
             setButtonClicked(1);
         }
@@ -47,11 +58,19 @@ export default function Transactions() {
 
         if (buttonClicked === 1) {
             const fetchData = async () => {
-                return (await buyTokens());
+
+                try {
+
+                    const a = await buyTokens({ throwOnError: true });
+                } catch (error) {
+                    if (error === null) {
+                        toast.error("An unexpected error encountered. Please try again!!");
+                    } else {
+                        toast.error(error.data.message);
+                    }
+                }
             }
-            const enterTxResponse = fetchData();
-            console.log(enterTxResponse);
-            toast(<div>Transaction posted<br />TXN: 2x</div>);
+            fetchData();
             setButtonClicked(0);
 
         }
@@ -110,10 +129,10 @@ export default function Transactions() {
                                     value: (value) => value > 0 || 'Please input an amount between 0.1 to 5',
                                     // message: 'Please input an amount between 0.1 to 5'
                                 },
-                                min: {
-                                    value: (env.MIN_VALUE),
-                                    message: env.BASE_COIN + ' amount should not be less than ' + env.MIN_VALUE
-                                },
+                                // min: {
+                                //     value: (env.MIN_VALUE),
+                                //     message: env.BASE_COIN + ' amount should not be less than ' + env.MIN_VALUE
+                                // },
                                 // max: {
                                 //     value: env.MAX_VALUE,
                                 //     message: env.BASE_COIN + ' amount should not be greater than ' + env.MAX_VALUE

@@ -64,7 +64,7 @@ export default function Teams() {
                 <div className="flex">
                     <img
                         className="object-cover w-20 h-20 mr-4 rounded-full shadow"
-                        src="https://images.pexels.com/photos/3931603/pexels-photo-3931603.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+                        src="images/teams/andrew_larkin.jpg"
                         alt="Person"
                     />
                     <div className="flex flex-col justify-center">
