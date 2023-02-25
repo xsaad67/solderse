@@ -81,7 +81,7 @@ export default function Footer() {
                     <p class="text-sm  text-white">
                         © Copyright {(new Date().getFullYear()).toString()} Solderse. All rights reserved.
                     </p>
-                    <ul class="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
+                    {/* <ul class="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
                         <li>
                             <Link href="/" class="text-sm  text-white transition-colors duration-300 hover:text-deep-purple-accent-400">F.A.Q</Link>
                         </li>
@@ -91,7 +91,7 @@ export default function Footer() {
                         <li>
                             <Link href="/" class="text-sm  text-white transition-colors duration-300 hover:text-deep-purple-accent-400">Terms &amp; Conditions</Link>
                         </li>
-                    </ul>
+                    </ul> */}
                 </div>
             </div>
         </div>

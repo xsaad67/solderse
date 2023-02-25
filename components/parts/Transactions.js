@@ -15,11 +15,6 @@ export default function Transactions() {
     const { switchNetwork } = useChain();
     const saleAddress = chainId in contractAddresses ? contractAddresses[chainId]['sale'].toString() : null
 
-    if (isWeb3Enabled) {
-        if (chainId !== 97) {
-            switchNetwork("0x61");
-        }
-    }
 
 
 
@@ -45,11 +40,13 @@ export default function Transactions() {
     const onSubmit = async (data) => {
 
         if (isWeb3Enabled) {
-            if (chainId !== 97) {
-                switchNetwork("0x61");
+            if (chainIdHex === env.BASE_CHAIN) {
+                setAmountToBuy(Moralis.Units.ETH(data.amount.toString()));
+                setButtonClicked(1);
+            } else {
+                switchNetwork(env.BASE_CHAIN);
             }
-            setAmountToBuy(Moralis.Units.ETH(data.amount.toString()));
-            setButtonClicked(1);
+
         }
     }
 
@@ -60,13 +57,24 @@ export default function Transactions() {
             const fetchData = async () => {
 
                 try {
+                    const transReciept = await buyTokens({ throwOnError: true });
+                    const transactionHashMsg = (transReciept?.hash !== undefined) ? "Transaction Hash is: " + transReciept?.hash : '';
 
-                    const a = await buyTokens({ throwOnError: true });
+                    toast.info("Transaction has been successfully posted, " + transactionHashMsg);
                 } catch (error) {
+
                     if (error === null) {
-                        toast.error("An unexpected error encountered. Please try again!!");
+                        toast.error("An unexpected error encountered. Please make sure you're using the BSC chain, having Balance and putting the limit with accordance to the minimum and maximum");
                     } else {
-                        toast.error(error.data.message);
+                        console.log(error);
+                        if (error?.data?.message !== undefined) {
+                            toast.error(error.data.message);
+                        } else if (error?.message !== undefined) {
+                            toast.error(error.message);
+                        } else {
+                            toast.error("An unexpected error encountered. Please make sure you're using the BSC chain, having Balance and putting the limit with accordance to the minimum and maximum");
+                        }
+
                     }
                 }
             }

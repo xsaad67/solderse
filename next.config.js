@@ -7,7 +7,9 @@ const env = {
   MIN_VALUE: 0.1,
   MAX_VALUE: 10,
   BASE_COIN: 'BNB',
-  RATE: 5000
+  RATE: 5000,
+  CHAIN: 97,
+  BASE_CHAIN: '0x61'
 }
 
 module.exports = { nextConfig, env }
