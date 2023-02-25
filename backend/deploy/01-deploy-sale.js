@@ -26,7 +26,6 @@ module.exports = async ({ getNamedAccounts, deployments }) => {
 
 
     const sale = await ethers.getContract("Sale");
-    console.log(solderse.address);
     //Transfering the presale amount to sale token
     await solderse.transfer(sale.address, ethers.utils.parseUnits("1000000", "ether"));
 
@@ -39,7 +38,8 @@ module.exports = async ({ getNamedAccounts, deployments }) => {
         ethers.utils.parseUnits(process.env.HARDCAP, decimals),
     );
     const txReceipt = await txResponse.wait();
-    console.log((await sale._rate()).toString());
+    console.log(wallet);
+    console.log(deployer);
 
 };
 module.exports.tags = ["all", "sale"]

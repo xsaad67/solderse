@@ -2,47 +2,50 @@ const { expect } = require("chai");
 const { BigNumber } = require("ethers");
 const { ethers } = require("hardhat");
 const INITIAL_SUPPLY = 100000000000;
-describe.only("Token contract", function () {
+require('dotenv').config({ path: __dirname + '/../../.env' });
+
+describe("Sale Contract", function () {
 
     let solderseFactory, solderse,
         saleFactory, sale,
         owner, user2, user3, user4, wallet,
-        transferAmount;
+        transferAmount, decimals;
 
     beforeEach(async function () {
         [owner, wallet, user2, user3, user4] = await ethers.getSigners();
 
+        //Get Initial contract
         solderseFactory = await ethers.getContractFactory("Solderse");
         solderse = await solderseFactory.deploy(INITIAL_SUPPLY);
+        decimals = await solderse.decimals();
 
-        //console.log((await owner.getBalance()).toString());
 
         saleFactory = await ethers.getContractFactory("Sale");
         const solderseAddress = solderse.address;
 
-
         sale = await saleFactory.deploy(ethers.utils.parseEther("5"),
             wallet.address,
             solderseAddress,
-            18
+            decimals
         );
 
         transferAmount = ethers.utils.parseEther("100000");
         await solderse.transfer(sale.address, transferAmount);
 
+        //ICO Parameter
+
 
     })
 
 
-    it.only("Deploy main token and check if sale owner is deployed with owner ", async function () {
+    it("Deploy main token and check if sale owner is deployed with owner ", async function () {
         const ownerBalance = await solderse.balanceOf(owner.address);
         const saleBalance = await solderse.balanceOf(sale.address);
 
+        console.log(BigNumber.from(ownerBalance).add(BigNumber.from(saleBalance)));
+        expect(await solderse.totalSupply()).to.equal(ownerBalance);
 
-        // console.log(BigNumber.from(ownerBalance).add(BigNumber.from(saleBalance)));
-        // expect(await solderse.totalSupply()).to.equal(ownerBalance);
-        //
-        // await expect(sale.connect(wallet).setMinPurchase(500)).to.be.reverted;
+        await expect(sale.connect(wallet).setMinPurchase(500)).to.be.reverted;
     });
 
     it("Transfer liquidity from main token to sale token", async function () {
@@ -51,21 +54,26 @@ describe.only("Token contract", function () {
     });
 
 
-    it("Starts Ico and Ends Ico", async function () {
-        await sale.startICO();
-        expect(new Number((await sale.endICO()).toString())).to.greaterThan(0);
-        await sale.stopICO();
-        // expect((await sale.endICO()).toString()).to.equal(0);
-
-    })
 
 
-    it.only("buyTokens and forward funds and claim tokens not ICO version", async function () {
+    it("buyTokens and forward funds and claim tokens not ICO version", async function () {
 
 
         const beforeStopIcoWalletBalance = ethers.utils.formatEther(await wallet.getBalance());
         const sendingEthers = ethers.utils.parseEther("15");
-        await sale.startICO();
+        let endingIco = new Date()
+        endingIco.setMonth(endingIco.getMonth() + 2)
+        endingIco = endingIco.valueOf();
+
+
+        await sale.startICO(
+            endingIco,
+            ethers.utils.parseUnits(process.env.MIN, decimals),
+            ethers.utils.parseUnits(process.env.MAX, decimals),
+            ethers.utils.parseUnits(process.env.SOFTCAP, decimals),
+            ethers.utils.parseUnits(process.env.HARDCAP, decimals)
+
+        );
         await sale.connect(user2).buyTokens({ value: sendingEthers });
 
         //Forward Funds

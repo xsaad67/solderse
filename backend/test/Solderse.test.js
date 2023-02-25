@@ -19,7 +19,6 @@ describe("Token contract", function () {
 
     it("Can Transfer between two accounts", async function () {
         const transfer = await solderse.transfer(user2.address, 500);
-        console.log(transfer);
         const user2Balance = await solderse.balanceOf(user2.address);
         expect(500).to.equal(user2Balance);
     })
