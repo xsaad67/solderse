@@ -12,6 +12,7 @@ export default function Transactions() {
     const { register, handleSubmit, setError, formState: { isSubmitting, errors } } = useForm();
     const { isWeb3Enabled, account, chainId: chainIdHex, Moralis } = useMoralis();
     const chainId = Number(chainIdHex);
+    console.log(chainIdHex);
     const { switchNetwork } = useChain();
     const saleAddress = chainId in contractAddresses ? contractAddresses[chainId]['sale'].toString() : null
 
@@ -55,12 +56,13 @@ export default function Transactions() {
 
         if (buttonClicked === 1) {
             const fetchData = async () => {
-
                 try {
                     const transReciept = await buyTokens({ throwOnError: true });
                     const transactionHashMsg = (transReciept?.hash !== undefined) ? "Transaction Hash is: " + transReciept?.hash : '';
 
+
                     toast.info("Transaction has been successfully posted, " + transactionHashMsg);
+
                 } catch (error) {
 
                     if (error === null) {
@@ -135,16 +137,16 @@ export default function Transactions() {
                                 required: 'Please input an amount between 0.1 to 5',
                                 validate: {
                                     value: (value) => value > 0 || 'Please input an amount between 0.1 to 5',
-                                    // message: 'Please input an amount between 0.1 to 5'
+
                                 },
-                                // min: {
-                                //     value: (env.MIN_VALUE),
-                                //     message: env.BASE_COIN + ' amount should not be less than ' + env.MIN_VALUE
-                                // },
-                                // max: {
-                                //     value: env.MAX_VALUE,
-                                //     message: env.BASE_COIN + ' amount should not be greater than ' + env.MAX_VALUE
-                                // },
+                                min: {
+                                    value: (env.MIN_VALUE),
+                                    message: env.BASE_COIN + ' amount should not be less than ' + env.MIN_VALUE
+                                },
+                                max: {
+                                    value: env.MAX_VALUE,
+                                    message: env.BASE_COIN + ' amount should not be greater than ' + env.MAX_VALUE
+                                },
                                 valueAsNumber: true
 
                             })}
@@ -195,7 +197,7 @@ export default function Transactions() {
                 </form>
                 {!isWeb3Enabled ? < div id="c-connectButton"> <ConnectButton></ConnectButton></div> : ''}
                 <p className="text-xs text-gray-600 sm:text-sm text-center mt-4">
-                    0xB8c77482e4....26C631bDD52
+                    {contractAddresses[56]['sale'].toString()}
                 </p>
 
 

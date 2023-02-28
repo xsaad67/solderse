@@ -35,11 +35,11 @@ module.exports = {
       accounts: [process.env.DEPLOYER_PRIV_KEY, process.env.WALLET_PRIV_KEY],
       chainId: 97,
     },
-    // bsc: {
-    //   url: "https://bsc-dataseed.binance.org",
-    //   accounts: [process.env.DEPLOYER_PRIV_KEY, process.env.WALLET_PRIV_KEY],
-    //   chainId: 56,
-    // },
+    bsc: {
+      url: "https://bsc-dataseed.binance.org",
+      accounts: [process.env.DEPLOYER_PRIV_KEY, process.env.WALLET_PRIV_KEY],
+      chainId: 56,
+    },
 
 
 

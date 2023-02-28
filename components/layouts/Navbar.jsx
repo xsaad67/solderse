@@ -11,7 +11,7 @@ export default function Navbar() {
                 <div className="relative flex items-center justify-between">
                     <Link
                         href="/"
-                        aria-label="Company"
+                        aria-label="Solderse"
                         title="Solderse"
                         className="inline-flex items-center"
                     >
@@ -86,7 +86,7 @@ export default function Navbar() {
 
                         <li>
                             <a
-                                href="#faqs"
+                                href="/solderse-whitepaper.pdf" target="_blank"
                                 className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
                             >
                                 WhitePaper
@@ -132,26 +132,24 @@ export default function Navbar() {
                                                 title="Solderse"
                                                 className="inline-flex items-center"
                                             >
-                                                <div>
-                                                    <svg
-                                                        className="w-8 text-deep-purple-accent-400"
-                                                        viewBox="0 0 24 24"
-                                                        strokeLinejoin="round"
-                                                        strokeWidth="2"
-                                                        strokeLinecap="round"
-                                                        strokeMiterlimit="10"
-                                                        stroke="currentColor"
-                                                        fill="none"
-                                                    >
-                                                        <rect x="3" y="1" width="7" height="12" />
-                                                        <rect x="3" y="17" width="7" height="6" />
-                                                        <rect x="14" y="1" width="7" height="6" />
-                                                        <rect x="14" y="11" width="7" height="12" />
-                                                    </svg>
-                                                    <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
-                                                        Solderse
-                                                    </span>
-                                                </div>
+                                                <svg
+                                                    className="w-8 text-teal-accent-400"
+                                                    viewBox="0 0 24 24"
+                                                    strokeLinejoin="round"
+                                                    strokeWidth="2"
+                                                    strokeLinecap="round"
+                                                    strokeMiterlimit="10"
+                                                    stroke="currentColor"
+                                                    fill="none"
+                                                >
+                                                    <rect x="3" y="1" width="7" height="12" />
+                                                    <rect x="3" y="17" width="7" height="6" />
+                                                    <rect x="14" y="1" width="7" height="6" />
+                                                    <rect x="14" y="11" width="7" height="12" />
+                                                </svg>
+                                                <span className="ml-2 text-xl font-bold tracking-wide uppercase">
+                                                    Solderse
+                                                </span>
                                             </Link>
                                         </div>
                                         <div>
@@ -224,7 +222,7 @@ export default function Navbar() {
 
                                             <li>
                                                 <a
-                                                    href="#"
+                                                    href="/solderse-whitepaper.pdf"
                                                     className="font-medium tracking-wide text-gray-900 transition-colors duration-200 hover:text-teal-accent-400"
                                                 >
                                                     WhitePaper

@@ -28,12 +28,11 @@ describe("Sale Contract", function () {
             solderseAddress,
             decimals
         );
-
+        console.log((await solderse.totalSupply()).toString());
         transferAmount = ethers.utils.parseEther("100000");
         await solderse.transfer(sale.address, transferAmount);
 
-        //ICO Parameter
-
+        //ICO Parameter 
 
     })
 
@@ -41,9 +40,12 @@ describe("Sale Contract", function () {
     it("Deploy main token and check if sale owner is deployed with owner ", async function () {
         const ownerBalance = await solderse.balanceOf(owner.address);
         const saleBalance = await solderse.balanceOf(sale.address);
+        const solderseTotalSUpply = await solderse.totalSupply();
+        const postTotal = BigNumber.from(ownerBalance).add(BigNumber.from(saleBalance));
 
-        console.log(BigNumber.from(ownerBalance).add(BigNumber.from(saleBalance)));
-        expect(await solderse.totalSupply()).to.equal(ownerBalance);
+
+
+        expect(solderseTotalSUpply).to.equal(postTotal);
 
         await expect(sale.connect(wallet).setMinPurchase(500)).to.be.reverted;
     });

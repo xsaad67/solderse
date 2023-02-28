@@ -7,22 +7,19 @@ module.exports = async ({ getNamedAccounts, deployments }) => {
     const solderse = await ethers.getContract("Solderse")
     const decimals = await solderse.decimals();
 
-
-
     const { deploy } = deployments;
     const { deployer, wallet } = await getNamedAccounts();
     await deploy('Sale', {
         from: deployer,
         log: true,
-        args: [ethers.utils.parseUnits("5000".toString(), "ether"), wallet, solderse.address, decimals]
+        args: [ethers.utils.parseUnits(process.env.RATE, "ether"), wallet, solderse.address, decimals]
     });
 
 
     // Starting ICO 
     let endingIco = new Date()
-    endingIco.setMonth(endingIco.getMonth() + 2)
+    endingIco.setMonth(endingIco.getMonth() + 4)
     endingIco = endingIco.valueOf();
-
 
 
     const sale = await ethers.getContract("Sale");
@@ -38,8 +35,6 @@ module.exports = async ({ getNamedAccounts, deployments }) => {
         ethers.utils.parseUnits(process.env.HARDCAP, decimals),
     );
     const txReceipt = await txResponse.wait();
-    console.log(wallet);
-    console.log(deployer);
 
 };
 module.exports.tags = ["all", "sale"]
